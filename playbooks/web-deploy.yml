@@ -1,0 +1,28 @@
+---
+- name: Deploy simple website on both servers
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install Apache
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start and enable Apache service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Create index.html
+      copy:
+        dest: /var/www/html/index.html
+        content: |
+          <html>
+          <head><title>Welcome</title></head>
+          <body>
+            <h1>🚀 Welcome to Ansible Automated Web Server!</h1>
+            <p>Deployed automatically using Ansible.</p>
+          </body>
+          </html>
