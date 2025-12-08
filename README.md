@@ -86,7 +86,9 @@ Below is a basic version of `webserver.yaml` for reference:
             <p>Deployed automatically using Ansible.</p>
           </body>
           </html>
+```
 
+```
 🔐 Inventory File (hosts.ini)
 
 Example:
@@ -95,6 +97,7 @@ Example:
 your_server_ip ansible_user=ubuntu ansible_ssh_private_key_file=/path/key.pem
 
 ```
+
 ```
 ▶ How to Run
 Step-1 — Configure Jenkins
