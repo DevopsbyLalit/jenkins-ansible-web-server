@@ -95,7 +95,7 @@ Example:
 your_server_ip ansible_user=ubuntu ansible_ssh_private_key_file=/path/key.pem
 
 ```
-
+```
 ▶ How to Run
 Step-1 — Configure Jenkins
 
@@ -118,7 +118,7 @@ Step-2 — Run Job
 Trigger job manually or with Git push
 
 Jenkins will execute Ansible playbook
-
+```
 ```
 http://<server-ip>
 Deployed with Jenkins + Ansible
